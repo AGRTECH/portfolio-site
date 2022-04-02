@@ -1,19 +1,33 @@
 .nav {
   display: flex;
-  justify-content: center;
-  background-color: black;
-  padding: 30px 0;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  justify-content: flex-end;
+  /* padding: 20px 0; */
+  margin-right: 150px;
+  margin-left: 150px;
+  margin-top: 20px;
 }
 
-.nav li {
+.nav p {
   margin-right: 50px;
-  color: white;
+  color: black;
   list-style-type: none;
   font-size: 18px;
 }
 
-.nav li:hover {
+.nav p:hover {
   opacity: 0.5;
   cursor: pointer;
+}
+
+.nameNav {
+  font-size: 25px;
+  width: 200px;
+  color: black;
+  margin-right: 850px;
+}
+
+@media (max-width: 1000px) {
+  .navSmaller {
+    margin: 0 50px 0 50px;
+  }
 }
