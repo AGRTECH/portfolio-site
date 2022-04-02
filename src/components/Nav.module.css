@@ -1,13 +1,12 @@
 .nav {
   display: flex;
-  justify-content: flex-end;
-  /* padding: 20px 0; */
+  justify-content: space-between;
   margin-right: 150px;
   margin-left: 150px;
   margin-top: 20px;
 }
 
-.nav p {
+.nav li {
   margin-right: 50px;
   color: black;
   list-style-type: none;
@@ -19,15 +18,17 @@
   cursor: pointer;
 }
 
+.listFlex {
+  display: flex;
+}
 .nameNav {
   font-size: 25px;
   width: 200px;
   color: black;
-  margin-right: 850px;
 }
 
 @media (max-width: 1000px) {
   .navSmaller {
-    margin: 0 50px 0 50px;
+    margin: 20px 50px 0 50px;
   }
 }

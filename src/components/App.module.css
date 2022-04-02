@@ -29,7 +29,6 @@
 .nftImage {
   width: 300px;
   height: 300px;
-  margin-right: 300px;
 }
 
 .nameList {
@@ -38,6 +37,29 @@
 
 .homeTopFlex {
   display: flex;
+  justify-content: space-between;
+}
+
+.homeName {
+  font-size: 65px;
+}
+
+.homeOccupation {
+  font-size: 19px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.homeBotFlex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.homeBotLeft {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-top: 15px;
 }
 
 @media (max-width: 1000px) {
