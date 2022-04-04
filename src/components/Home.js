@@ -25,7 +25,20 @@ const Home = () => {
                 illum esse atque eligendi enim ipsum?
               </p>
             </div>
-            <div className={styles.homeBotRight}>asfasfaswf</div>
+            <div className={styles.homeBotRight}>
+              <ul className={styles.homeBotRightLeftList}>
+                <li>Age</li>
+                <li>Residence</li>
+                <li>e-mail</li>
+                <li>Phone</li>
+              </ul>
+              <ul className={styles.homeBotRightRightList}>
+                <li>22</li>
+                <li>Michigan, USA</li>
+                <li>xarossx@yahoo.com</li>
+                <li>(586) 651-6917</li>
+              </ul>
+            </div>
             <div></div>
           </div>
         </div>

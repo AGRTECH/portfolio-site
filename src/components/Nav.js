@@ -1,15 +1,27 @@
 import React from "react";
 import styles from "./Nav.module.css";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import Home from "./Home";
+import About from "./About";
+import Contact from "./Contact";
 
 const Nav = (props) => {
   return (
     <div className={`${styles.nav} ${styles.navSmaller}`}>
-      <h4 className={styles.nameNav}>Alex Ross</h4>
+      <h4 className={styles.nameNav}>AGR</h4>
       <ul className={`${styles.listFlex}`}>
-        <li>home</li>
-        <li>about</li>
-        <li>portfolio</li>
-        <li>contact</li>
+        <li>
+          <Link to={"/home"}>home</Link>
+        </li>
+        <li>
+          <Link to={"/portfolio"}>portfolio</Link>
+        </li>
+        <li>
+          <Link to={"/about"}>about</Link>
+        </li>
+        <li>
+          <Link to={"/contact"}>contact</Link>
+        </li>
       </ul>
     </div>
   );

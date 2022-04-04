@@ -13,7 +13,17 @@
   font-size: 18px;
 }
 
-.nav p:hover {
+.nav li a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.nav li a.current {
+  text-decoration: underline;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.nav li:hover {
   opacity: 0.5;
   cursor: pointer;
 }
