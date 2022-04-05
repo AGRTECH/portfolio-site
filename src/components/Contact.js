@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./App.module.css";
+import { Form, Button } from "react-bootstrap";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
   return (
     <>
       <div
@@ -16,31 +21,58 @@ const Contact = () => {
             </ul>
             <div></div>
           </div>
-          <div className={styles.homeBotFlex}>
-            <div className={styles.homeBotLeft}>
-              <p>About Me</p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
-                soluta aliquid? Esse voluptatum laudantium quasi non? Tenetur
-                voluptates quidem perferendis, fugiat eaque, laudantium aut
-                illum esse atque eligendi enim ipsum?
-              </p>
-            </div>
-            <div className={styles.homeBotRight}>
-              <ul className={styles.homeBotRightLeftList}>
-                <li>Age</li>
-                <li>Residence</li>
-                <li>e-mail</li>
-                <li>Phone</li>
-              </ul>
-              <ul className={styles.homeBotRightRightList}>
-                <li>22</li>
-                <li>Michigan, USA</li>
-                <li>xarossx@yahoo.com</li>
-                <li>(586) 651-6917</li>
-              </ul>
-            </div>
-            <div></div>
+          <div className={styles.contactBot}>
+            <Form
+              action="https://formsubmit.co/xarossx@yahoo.com"
+              method="POST"
+            >
+              <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Label>Name</Form.Label>
+                <Form.Control
+                  onChange={(e) => {
+                    setName(e.target.value);
+                  }}
+                  type="name"
+                  name="name"
+                  placeholder="Enter name"
+                  required
+                />
+              </Form.Group>
+
+              <Form.Group className="mb-3" controlId="formBasicPassword">
+                <Form.Label>Email</Form.Label>
+                <Form.Control
+                  onChange={(e) => {
+                    setEmail(e.target.value);
+                  }}
+                  type="email"
+                  name="email"
+                  placeholder="Enter email"
+                  required
+                />
+              </Form.Group>
+              <Form.Group
+                className="mb-3"
+                controlId="formBasicCheckbox"
+              ></Form.Group>
+              <Form.Group
+                className="mb-3"
+                controlId="exampleForm.ControlTextarea1"
+              >
+                <Form.Label>Message for me</Form.Label>
+                <Form.Control
+                  onChange={(e) => {
+                    setMessage(e.target.value);
+                  }}
+                  as="textarea"
+                  name="message"
+                  rows={3}
+                />
+              </Form.Group>
+              <Button variant="primary" type="submit">
+                Submit
+              </Button>
+            </Form>
           </div>
         </div>
       </div>

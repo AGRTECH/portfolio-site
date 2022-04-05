@@ -7,11 +7,21 @@ const Home = () => {
     <>
       <div className={`${styles.homeContainer} ${styles.homeContainerSmaller}`}>
         <div className={`${styles.innerHomeContainer}`}>
-          <div className={styles.homeTopFlex}>
-            <img className={styles.nftImage} src={nftImg} alt="no img" />
+          <div className={`${styles.homeTopFlex} ${styles.homeTopFlexIphone}`}>
+            <img
+              className={`${styles.nftImage} ${styles.nftImageIphone}`}
+              src={nftImg}
+              alt="no img"
+            />
             <ul className={styles.nameList}>
-              <li className={styles.homeName}>Alex Ross</li>
-              <li className={styles.homeOccupation}>dApp Developer</li>
+              <li className={`${styles.homeName} ${styles.homeNameIphone}`}>
+                Alex Ross
+              </li>
+              <li
+                className={`${styles.homeOccupation} ${styles.homeNameOccupationIphone}`}
+              >
+                dApp Developer
+              </li>
             </ul>
             <div></div>
           </div>

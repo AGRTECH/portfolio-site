@@ -8,13 +8,13 @@ const About = () => {
         className={`${styles.aboutContainer} ${styles.homeContainerSmaller}`}
       >
         <div className={`${styles.innerAboutContainer}`}>
-          <div className={styles.homeTopFlex}>
-            <div></div>
+          <div className={`${styles.homeTopFlex} ${styles.aboutTop}`}>
+            <div className={styles.hidden}></div>
             <ul className={styles.nameList}>
               <li className={styles.aboutName}>About Me</li>
-              <li className={styles.homeOccupation}></li>
+              <li className={`${styles.homeOccupation}`}></li>
             </ul>
-            <div></div>
+            <div className={styles.hidden}></div>
           </div>
           <div className={styles.homeBotFlex}>
             <div className={styles.homeBotLeft}>

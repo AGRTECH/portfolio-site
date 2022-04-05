@@ -80,6 +80,10 @@
   justify-content: space-between;
 }
 
+.contactBot {
+  padding: 0 200px 0 200px;
+}
+
 .homeBotLeft {
   display: flex;
   flex-direction: column;
@@ -103,8 +107,66 @@
   color: rgba(0, 0, 0, 0.6);
 }
 
+.buttonLiveDemo {
+  margin-right: 7px;
+}
+
 @media (max-width: 1000px) {
   .homeContainerSmaller {
     margin: 0 50px 0 50px;
+  }
+}
+
+@media (max-width: 415px) {
+  .homeTopFlexIphone {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .homeNameIphone {
+    font-size: 30px;
+  }
+
+  .homeNameOccupationIphone {
+    font-size: 18px;
+    margin-top: 0px;
+  }
+
+  .nftImageIphone {
+    width: 180px;
+    height: 180px;
+  }
+
+  .homeContainer {
+    height: 1000px;
+  }
+
+  .aboutContainer {
+    height: 1000px;
+  }
+
+  .homeBotFlex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .homeBotLeft {
+    width: 100%;
+  }
+
+  .homeBotRight {
+    display: flex;
+  }
+
+  .aboutName {
+    text-align: center;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .aboutTop {
+    display: block;
   }
 }

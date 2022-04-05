@@ -7,7 +7,10 @@ import Contact from "./Contact";
 
 const Nav = (props) => {
   return (
-    <div className={`${styles.nav} ${styles.navSmaller}`}>
+    <nav
+      className={`${styles.nav} ${styles.navSmaller} ${styles.navIphone}
+      `}
+    >
       <h4 className={styles.nameNav}>AGR</h4>
       <ul className={`${styles.listFlex}`}>
         <li>
@@ -23,7 +26,7 @@ const Nav = (props) => {
           <Link to={"/contact"}>contact</Link>
         </li>
       </ul>
-    </div>
+    </nav>
   );
 };
 
