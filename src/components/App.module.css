@@ -138,7 +138,14 @@
   }
 
   .homeContainer {
-    height: 1000px;
+    background-image: linear-gradient(
+      to top,
+      white,
+      white 62%,
+      rgba(30, 139, 195, 0.3) 38%,
+      rgba(30, 139, 195, 0.3)
+    );
+    height: 850px;
   }
 
   .aboutContainer {
@@ -156,6 +163,29 @@
 
   .homeBotRight {
     display: flex;
+    flex-direction: column;
+    font-size: 13px;
+  }
+
+  .homeBotRightLeftList {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0px;
+  }
+
+  .homeBotRightRightList {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0px;
+  }
+
+  .homeBotRightLeftList li {
+    margin-right: 20px;
+  }
+
+  .homeBotRightRightList li {
+    margin-right: 10px;
+    font-size: 10px;
   }
 
   .aboutName {
@@ -168,5 +198,19 @@
 
   .aboutTop {
     display: block;
+  }
+
+  .homeDescription {
+    text-align: center;
+  }
+
+  .nameList {
+    padding-left: 0px;
+  }
+
+  .contactBot {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 200px;
   }
 }

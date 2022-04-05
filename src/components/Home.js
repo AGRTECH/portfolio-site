@@ -27,8 +27,8 @@ const Home = () => {
           </div>
           <div className={styles.homeBotFlex}>
             <div className={styles.homeBotLeft}>
-              <p>About Me</p>
-              <p>
+              <p className={styles.homeDescription}>About Me</p>
+              <p className={styles.homeDescription}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
                 soluta aliquid? Esse voluptatum laudantium quasi non? Tenetur
                 voluptates quidem perferendis, fugiat eaque, laudantium aut
@@ -39,7 +39,7 @@ const Home = () => {
               <ul className={styles.homeBotRightLeftList}>
                 <li>Age</li>
                 <li>Residence</li>
-                <li>e-mail</li>
+                <li>email</li>
                 <li>Phone</li>
               </ul>
               <ul className={styles.homeBotRightRightList}>
