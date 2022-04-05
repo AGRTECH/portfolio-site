@@ -10,7 +10,7 @@ const Contact = () => {
   return (
     <>
       <div
-        className={`${styles.aboutContainer} ${styles.homeContainerSmaller}`}
+        className={`${styles.aboutContainer} ${styles.homeContainerSmaller} ${styles.contactContainer}`}
       >
         <div className={`${styles.innerAboutContainer}`}>
           <div className={styles.homeTopFlex}>

@@ -152,6 +152,10 @@
     height: 1000px;
   }
 
+  .contactContainer {
+    height: 500px;
+  }
+
   .homeBotFlex {
     display: flex;
     flex-direction: column;
@@ -211,6 +215,5 @@
   .contactBot {
     padding-left: 0px;
     padding-right: 0px;
-    padding-top: 200px;
   }
 }

@@ -27,7 +27,18 @@ const Portfolio = () => {
                 illum esse atque eligendi enim ipsum?
               </p>
               <div>
-                <Button className={styles.buttonLiveDemo}>Live Demo</Button>
+                <Button
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.open(
+                      "https://drive.google.com/file/d/1aJtbq-9sHBH0fbW6bogfB6nCGes128dS/view",
+                      "_blank"
+                    );
+                  }}
+                  className={styles.buttonLiveDemo}
+                >
+                  Demo
+                </Button>
                 <Button
                   onClick={(e) => {
                     e.preventDefault();
@@ -47,7 +58,7 @@ const Portfolio = () => {
                 illum esse atque eligendi enim ipsum?
               </p>
               <div>
-                <Button className={styles.buttonLiveDemo}>Live Demo</Button>
+                <Button className={styles.buttonLiveDemo}> Demo</Button>
                 <Button
                   onClick={(e) => {
                     e.preventDefault();
