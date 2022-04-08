@@ -19,12 +19,9 @@ const Portfolio = () => {
           </div>
           <div className={styles.homeBotFlex}>
             <div className={styles.homeBotLeft}>
-              <p>Everpay</p>
+              <p className={styles.everpayTitle}>Everpay</p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
-                soluta aliquid? Esse voluptatum laudantium quasi non? Tenetur
-                voluptates quidem perferendis, fugiat eaque, laudantium aut
-                illum esse atque eligendi enim ipsum?
+                A payment streaming app. Streams money to the receiver every second over a specified interval of time and can be withdrawn at any time. This could be used as payment to employees from employers instead of the traditional, get paid every 2 weeks method.
               </p>
               <div>
                 <Button
@@ -50,12 +47,11 @@ const Portfolio = () => {
               </div>
             </div>
             <div className={styles.homeBotLeft}>
-              <p>Transparent Voting</p>
+              <p className={styles.transparentVotingTitle}>Transparent Voting</p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
-                soluta aliquid? Esse voluptatum laudantium quasi non? Tenetur
-                voluptates quidem perferendis, fugiat eaque, laudantium aut
-                illum esse atque eligendi enim ipsum?
+                A voting and poll creation app. You create a poll, or just vote on
+                existing polls. Can be any category and users can only vote once per poll. 
+                Results are shown after a time interval and winner is revealed.
               </p>
               <div>
                 <Button className={styles.buttonLiveDemo}> Demo</Button>

@@ -29,10 +29,8 @@ const Home = () => {
             <div className={styles.homeBotLeft}>
               <p className={styles.homeDescription}>About Me</p>
               <p className={styles.homeDescription}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
-                soluta aliquid? Esse voluptatum laudantium quasi non? Tenetur
-                voluptates quidem perferendis, fugiat eaque, laudantium aut
-                illum esse atque eligendi enim ipsum?
+                I am a self-taught developer, programming for 2+ years mostly 
+                specializing in <span className={styles.frontEndText}>Front-End (Javascript, React, Redux etc.)</span>  +  <span className={styles.backEndText}>Solidity Back-End (truffle / ganache, web3, openzeppelin etc.)</span>.
               </p>
             </div>
             <div className={styles.homeBotRight}>
@@ -45,7 +43,7 @@ const Home = () => {
               <ul className={styles.homeBotRightRightList}>
                 <li>22</li>
                 <li>Michigan, USA</li>
-                <li>xarossx@yahoo.com</li>
+                <li>xarossx@ yahoo.com</li>
                 <li>(586) 651-6917</li>
               </ul>
             </div>

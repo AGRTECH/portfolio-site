@@ -19,9 +19,9 @@ const Nav = (props) => {
         <li>
           <Link to={"/portfolio"}>portfolio</Link>
         </li>
-        <li>
+        {/* <li>
           <Link to={"/about"}>about</Link>
-        </li>
+        </li> */}
         <li>
           <Link to={"/contact"}>contact</Link>
         </li>
