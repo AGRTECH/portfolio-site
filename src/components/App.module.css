@@ -202,12 +202,14 @@
     display: flex;
     flex-direction: row;
     padding-left: 0px;
+    list-style: none;
   }
 
   .homeBotRightRightList {
     display: flex;
     flex-direction: row;
     padding-left: 0px;
+    list-style: none;
   }
 
   .homeBotRightLeftList li {
