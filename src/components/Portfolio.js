@@ -54,7 +54,14 @@ const Portfolio = () => {
                 Results are shown after a time interval and winner is revealed.
               </p>
               <div>
-                <Button className={styles.buttonLiveDemo}> Demo</Button>
+              {/* https://drive.google.com/file/d/1zA3Jx-ifjzlEBcXDVSX4othSllvrpSI4/view?usp=sharing */}
+                <Button className={styles.buttonLiveDemo}  onClick={(e) => {
+                    e.preventDefault();
+                    window.open(
+                      "https://drive.google.com/file/d/1zA3Jx-ifjzlEBcXDVSX4othSllvrpSI4/view?usp=sharing",
+                      "_blank"
+                    );
+                  }}> Demo</Button>
                 <Button
                   onClick={(e) => {
                     e.preventDefault();
