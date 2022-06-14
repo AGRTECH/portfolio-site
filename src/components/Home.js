@@ -15,7 +15,7 @@ const Home = () => {
             />
             <ul className={styles.nameList}>
               <li className={`${styles.homeName} ${styles.homeNameIphone}`}>
-                Alex Ross
+                Alin's Power Washing
               </li>
               <li
                 className={`${styles.homeOccupation} ${styles.homeNameOccupationIphone}`}
@@ -29,8 +29,16 @@ const Home = () => {
             <div className={styles.homeBotLeft}>
               <p className={styles.homeDescription}>About Me</p>
               <p className={styles.homeDescription}>
-                I am a self-taught developer, programming for 2+ years mostly 
-                specializing in <span className={styles.frontEndText}>Front-End (Javascript, React, Redux etc.)</span>  +  <span className={styles.backEndText}>Solidity Back-End (truffle / ganache, web3, openzeppelin etc.)</span>.
+                I am a self-taught developer, programming for 2+ years mostly
+                specializing in{" "}
+                <span className={styles.frontEndText}>
+                  Front-End (Javascript, React, Redux etc.)
+                </span>{" "}
+                +{" "}
+                <span className={styles.backEndText}>
+                  Solidity Back-End (truffle / ganache, web3, openzeppelin etc.)
+                </span>
+                .
               </p>
             </div>
             <div className={styles.homeBotRight}>
