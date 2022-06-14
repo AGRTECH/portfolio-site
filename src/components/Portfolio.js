@@ -12,7 +12,7 @@ const Portfolio = () => {
           <div className={styles.homeTopFlex}>
             <div></div>
             <ul className={styles.nameList}>
-              <li className={styles.aboutName}>Our services</li>
+              <li className={styles.aboutName}>My portfolio</li>
               <li className={styles.homeOccupation}></li>
             </ul>
             <div></div>
