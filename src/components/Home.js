@@ -20,7 +20,7 @@ const Home = () => {
             />
             <ul className={styles.nameList}>
               <li className={`${styles.homeName} ${styles.homeNameIphone}`}>
-                Alex Ross
+                Alin's Power Washing
               </li>
               <li
                 className={`${styles.homeOccupation} ${styles.homeNameOccupationIphone}`}
