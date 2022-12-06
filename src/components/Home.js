@@ -78,8 +78,8 @@ const Home = () => {
                 </div>
                 <div className={styles.homeBotRight}>
                   <ul className={styles.homeBotRightLeftList}>
-                    <li>23 |</li>
-                    <li>Clinton Township, MI | </li>
+                    <li>23 &nbsp;|</li>
+                    <li>&nbsp;&nbsp;Clinton Township, MI &nbsp;| </li>
                     <li>ross4467@gmail.com | </li>
                     <li>586-651-6917</li>
                   </ul>
