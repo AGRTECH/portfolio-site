@@ -80,8 +80,8 @@ const Home = () => {
                   <ul className={styles.homeBotRightLeftList}>
                     <li>23 &nbsp;|</li>
                     <li>&nbsp;&nbsp;Clinton Township, MI &nbsp;| </li>
-                    <li>ross4467@gmail.com | </li>
-                    <li>586-651-6917</li>
+                    <li>&nbsp;&nbsp;ross4467@gmail.com &nbsp;| </li>
+                    <li>&nbsp;&nbsp;586-651-6917</li>
                   </ul>
                   <ul className={styles.homeBotRightRightList}>
                     <li></li>
