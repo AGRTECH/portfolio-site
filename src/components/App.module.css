@@ -321,6 +321,10 @@
   padding: 10px 10px 10px 10px;
 }
 
+.mobileOnly {
+  display: none;
+}
+
 @media (max-width: 1000px) {
   .homeContainerSmaller {
     margin: 0 50px 0 50px;
@@ -464,5 +468,13 @@
 
   .estimateButton {
     font-size: 15px;
+  }
+
+  .seperator {
+    display: none;
+  }
+
+  .mobileOnly {
+    display: inline;
   }
 }

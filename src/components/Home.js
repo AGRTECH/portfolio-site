@@ -78,10 +78,25 @@ const Home = () => {
                 </div>
                 <div className={styles.homeBotRight}>
                   <ul className={styles.homeBotRightLeftList}>
-                    <li>23 &nbsp;|</li>
-                    <li>&nbsp;&nbsp;Clinton Township, MI &nbsp;| </li>
-                    <li>&nbsp;&nbsp;ross4467@gmail.com &nbsp;| </li>
-                    <li>&nbsp;&nbsp;586-651-6917</li>
+                    <li>
+                      23 &nbsp;<span className={styles.seperator}>|</span>
+                    </li>
+                    <li>
+                      &nbsp;&nbsp;Clinton Township,{" "}
+                      <span className={styles.mobileOnly}>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      </span>
+                      MI &nbsp;
+                      <span className={styles.seperator}>|</span>{" "}
+                    </li>
+                    <li>
+                      &nbsp;&nbsp;ross4467 @gmail.com &nbsp;
+                      <span className={styles.seperator}>|</span>{" "}
+                    </li>
+                    <li>
+                      <span className={styles.seperator}>&nbsp;&nbsp;</span>
+                      586-651-6917
+                    </li>
                   </ul>
                   <ul className={styles.homeBotRightRightList}>
                     <li>
