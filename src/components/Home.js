@@ -84,9 +84,6 @@ const Home = () => {
                     <li>&nbsp;&nbsp;586-651-6917</li>
                   </ul>
                   <ul className={styles.homeBotRightRightList}>
-                    <li></li>
-                    <li></li>
-                    <li></li>
                     <li>
                       <a href="https://github.com/AGRTECH/">
                         <img

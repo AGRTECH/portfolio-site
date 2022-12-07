@@ -352,18 +352,28 @@
       to top,
       white,
       white 55%,
-      rgba(30, 139, 195, 0.3) 45%,
-      rgba(30, 139, 195, 0.3)
+      rgba(30, 139, 195, 1) 45%,
+      rgba(30, 139, 195, 1)
     );
     height: 720px;
   }
 
   .aboutContainer {
-    height: 1000px;
+    height: 2050px;
+    background-image: linear-gradient(
+      to top,
+      white,
+      white 90%,
+      rgba(30, 139, 195, 1) 10%,
+      rgba(30, 139, 195, 1)
+    );
   }
 
   .contactContainer {
-    height: 500px;
+    height: 550px;
+  }
+
+  .innerHomeContainer {
   }
 
   .homeBotFlex {
@@ -391,8 +401,13 @@
   .homeBotRightRightList {
     display: flex;
     flex-direction: row;
-    padding-left: 0px;
     list-style: none;
+    padding-left: 0px;
+  }
+
+  .socialIcon {
+    height: 45px;
+    width: 45px;
   }
 
   .homeBotRightLeftList li {
@@ -400,7 +415,7 @@
   }
 
   .homeBotRightRightList li {
-    margin-right: 25px;
+    margin-right: 10px;
     font-size: 10px;
   }
 
@@ -435,6 +450,19 @@
 
   .concreteCleaningCard {
     width: 250px;
-    height: 380px;
+    height: 320px;
+    margin-bottom: 15px;
+  }
+
+  .concreteCleaningImg {
+    height: 100%;
+  }
+
+  .buttons {
+    display: flex;
+  }
+
+  .estimateButton {
+    font-size: 15px;
   }
 }
