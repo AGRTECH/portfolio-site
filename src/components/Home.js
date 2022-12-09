@@ -24,10 +24,12 @@ const Home = () => {
   return (
     <>
       <div className={styles.globalDiv}>
-        <img src={code} alt="" className={styles.codeImg} />
-        <img src={code} alt="" className={styles.codeImg2} />
-        <img src={code} alt="" className={styles.codeImg3} />
-        <img src={code} alt="" className={styles.codeImg4} />
+        {/* <div className={styles.codeDiv}>
+          <img src={code} alt="" className={styles.codeImg} />
+          <img src={code} alt="" className={styles.codeImg2} />
+          <img src={code} alt="" className={styles.codeImg3} />
+          <img src={code} alt="" className={styles.codeImg4} />
+        </div> */}
         <div className={`${styles.homeWrap}`}>
           <div
             className={`${styles.homeContainer} ${styles.homeContainerSmaller} `}
@@ -63,7 +65,7 @@ const Home = () => {
                     Hello!
                   </p>
                   <p className={styles.homeDescription}>
-                    I am a self-taught developer, programming for 3+ years
+                    I am a software developer, programming for 3+ years
                     specializing in{" "}
                     <span className={styles.frontEndText}>
                       Front-End (Javascript, React, Redux etc.)
@@ -73,8 +75,14 @@ const Home = () => {
                       Solidity Back-End (truffle / ganache, web3, openzeppelin
                       etc.)
                     </span>
-                    .
+                    . Check out my projects below to see these skills put into
+                    use!
                   </p>
+                  <Link className={styles.buttonCenter} to={"/contact"}>
+                    <button className={`${styles.contactButton}`}>
+                      Contact Me
+                    </button>
+                  </Link>
                 </div>
                 <div className={styles.homeBotRight}>
                   <ul className={styles.homeBotRightLeftList}>

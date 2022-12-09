@@ -20,7 +20,7 @@
 }
 
 .homeContainer {
-  height: 600px;
+  height: 630px;
   margin: 0 150px 0 150px;
   background-color: rgba(30, 139, 195, 0.3);
   background-image: linear-gradient(
@@ -161,12 +161,14 @@
   display: flex;
   list-style: none;
   font-weight: bold;
+  justify-content: center;
 }
 
 .homeBotRightRightList {
   display: flex;
   list-style: none;
   color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
 }
 
 .homeBotRightRightList li {
@@ -273,6 +275,8 @@
   top: 0;
   width: 100%;
   height: 100%;
+  background-size: 150px;
+  background-repeat: repeat-y;
 }
 
 .codeImg2 {
@@ -283,7 +287,7 @@
   top: 0;
   width: 100%;
   height: 100%;
-  margin-top: 802px;
+  margin-top: 787px;
 }
 
 .codeImg3 {
@@ -294,7 +298,7 @@
   top: 0;
   width: 100%;
   height: 100%;
-  margin-top: 1603px;
+  margin-top: 1572px;
 }
 
 .codeImg4 {
@@ -304,8 +308,13 @@
   left: 0;
   top: 0;
   width: 100%;
-  height: 65%;
-  margin-top: 2404px;
+  height: 74%;
+  margin-top: 2359px;
+}
+
+.codeDiv {
+  display: flex;
+  flex-direction: column;
 }
 
 .homeWrap {
@@ -314,6 +323,9 @@
 }
 
 .socialIcon {
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
   height: 60px;
   width: 60px;
   border: 1px solid black;
@@ -325,13 +337,44 @@
   display: none;
 }
 
+.contactButton {
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+  border: 3px solid black;
+  background-color: rgba(31, 121, 169, 0.9);
+  /* height: 40px; */
+  font-size: 20px;
+  border-radius: 7%;
+  margin-right: 4px;
+  width: 100%;
+  padding: 0 15px 0 15px;
+  align-self: center;
+  justify-self: center;
+  justify-content: center;
+}
+
+.contactButton:hover {
+  top: -10px;
+  background-color: rgba(247, 170, 3, 0.9);
+}
+
+.socialIcon:hover {
+  top: -10px;
+  background-color: rgba(247, 170, 3, 0.9);
+}
+
+.buttonCenter {
+  align-self: center;
+}
+
 @media (max-width: 1000px) {
   .homeContainerSmaller {
     margin: 0 50px 0 50px;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .homeTopFlexIphone {
     display: flex;
     flex-direction: column;
@@ -355,11 +398,11 @@
     background-image: linear-gradient(
       to top,
       white,
-      white 55%,
-      rgba(30, 139, 195, 1) 45%,
+      white 61%,
+      rgba(30, 139, 195, 1) 39%,
       rgba(30, 139, 195, 1)
     );
-    height: 720px;
+    height: 830px;
   }
 
   .aboutContainer {
@@ -400,6 +443,8 @@
     flex-direction: row;
     padding-left: 0px;
     list-style: none;
+    align-items: center;
+    justify-content: center;
   }
 
   .homeBotRightRightList {
@@ -407,6 +452,7 @@
     flex-direction: row;
     list-style: none;
     padding-left: 0px;
+    justify-content: center;
   }
 
   .socialIcon {
@@ -453,9 +499,10 @@
   }
 
   .concreteCleaningCard {
-    width: 250px;
+    width: 270px;
     height: 320px;
     margin-bottom: 15px;
+    margin-left: 20px;
   }
 
   .concreteCleaningImg {
@@ -476,5 +523,31 @@
 
   .mobileOnly {
     display: inline;
+  }
+
+  .homeBotRightLeftList li {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 376px) {
+  .homeBotRightLeftList li {
+    font-size: 9px;
+  }
+
+  .socialIcon {
+    height: 37px;
+    width: 37px;
+  }
+
+  .concreteCleaningCard {
+    width: 230px;
+    height: 320px;
+    margin-bottom: 15px;
+    margin-left: 22px;
+  }
+
+  .estimateButton {
+    font-size: 14px;
   }
 }
