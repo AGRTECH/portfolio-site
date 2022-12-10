@@ -78,7 +78,10 @@ const Home = () => {
                     . Check out my projects below to see these skills put into
                     use!
                   </p>
-                  <Link className={styles.buttonCenter} to={"/contact"}>
+                  <Link
+                    className={`${styles.buttonCenter}${styles.noStyle}`}
+                    to={"/contact"}
+                  >
                     <button className={`${styles.contactButton}`}>
                       Contact Me
                     </button>
@@ -86,10 +89,10 @@ const Home = () => {
                 </div>
                 <div className={styles.homeBotRight}>
                   <ul className={styles.homeBotRightLeftList}>
-                    <li>
+                    <li className={styles.mobileBorder}>
                       23 &nbsp;<span className={styles.seperator}>|</span>
                     </li>
-                    <li>
+                    <li className={styles.mobileBorder}>
                       &nbsp;&nbsp;Clinton Township,{" "}
                       <span className={styles.mobileOnly}>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -97,7 +100,7 @@ const Home = () => {
                       MI &nbsp;
                       <span className={styles.seperator}>|</span>{" "}
                     </li>
-                    <li>
+                    <li className={styles.mobileBorder}>
                       &nbsp;&nbsp;ross4467 @gmail.com &nbsp;
                       <span className={styles.seperator}>|</span>{" "}
                     </li>

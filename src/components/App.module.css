@@ -87,6 +87,7 @@
 .nftImage {
   width: 300px;
   height: 300px;
+  align-self: center;
 }
 
 .frontEndText {
@@ -368,13 +369,20 @@
   align-self: center;
 }
 
-@media (max-width: 1000px) {
+.noStyle {
+  text-decoration: none;
+}
+
+@media (max-width: 1260px) {
+  .seperator {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
   .homeContainerSmaller {
     margin: 0 50px 0 50px;
   }
-}
 
-@media (max-width: 800px) {
   .homeTopFlexIphone {
     display: flex;
     flex-direction: column;
@@ -382,6 +390,7 @@
 
   .homeNameIphone {
     font-size: 30px;
+    text-align: center;
   }
 
   .homeNameOccupationIphone {
