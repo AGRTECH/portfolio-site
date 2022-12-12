@@ -380,36 +380,37 @@ const Home = () => {
                 />
                 <p className={styles.cardCenter}>AGR Token Exchange</p>
                 <div className={styles.buttons}>
-                  <Link
-                    className={`${styles.center} ${styles.noStyle}`}
-                    to={"/patio"}
+                  <Button
+                    className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      window.open(
+                        "https://agr-token-exchange.vercel.app/",
+                        "_blank"
+                      );
+                    }}
                   >
-                    <Button
-                      className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
-                    >
-                      Site
-                    </Button>
-                  </Link>
-                  <Link
-                    className={`${styles.center} ${styles.noStyle}`}
-                    to={"/patio"}
+                    Site
+                  </Button>
+
+                  <Button
+                    className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
                   >
-                    <Button
-                      className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
-                    >
-                      Video Demo
-                    </Button>
-                  </Link>
-                  <Link
-                    className={`${styles.center} ${styles.noStyle}`}
-                    to={"/patio"}
+                    Video Demo
+                  </Button>
+
+                  <Button
+                    className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      window.open(
+                        "https://github.com/AGRTECH/agr-token-exchange",
+                        "_blank"
+                      );
+                    }}
                   >
-                    <Button
-                      className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
-                    >
-                      Code
-                    </Button>
-                  </Link>
+                    Code
+                  </Button>
                 </div>
               </div>
             </Fade>
@@ -422,36 +423,34 @@ const Home = () => {
                 />
                 <p className={styles.cardCenter}>AGR Swap</p>
                 <div className={styles.buttons}>
-                  <Link
-                    className={`${styles.center} ${styles.noStyle}`}
-                    to={"/patio"}
+                  <Button
+                    className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      window.open("https://agrswap.vercel.app/", "_blank");
+                    }}
                   >
-                    <Button
-                      className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
-                    >
-                      Site
-                    </Button>
-                  </Link>
-                  <Link
-                    className={`${styles.center} ${styles.noStyle}`}
-                    to={"/patio"}
+                    Site
+                  </Button>
+
+                  <Button
+                    className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
                   >
-                    <Button
-                      className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
-                    >
-                      Video Demo
-                    </Button>
-                  </Link>
-                  <Link
-                    className={`${styles.center} ${styles.noStyle}`}
-                    to={"/patio"}
+                    Video Demo
+                  </Button>
+
+                  <Button
+                    className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      window.open(
+                        "https://github.com/AGRTECH/starter_kit",
+                        "_blank"
+                      );
+                    }}
                   >
-                    <Button
-                      className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
-                    >
-                      Code
-                    </Button>
-                  </Link>
+                    Code
+                  </Button>
                 </div>
               </div>
             </Fade>
