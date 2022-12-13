@@ -68,12 +68,12 @@ const Home = () => {
                     I am a software developer, programming for 3+ years
                     specializing in{" "}
                     <span className={styles.frontEndText}>
-                      Front-End (Javascript, React, Redux etc.)
+                      Front-End (Javascript, React, Redux, CSS, HTML, Bootstrap)
                     </span>{" "}
                     +{" "}
                     <span className={styles.backEndText}>
-                      Solidity Back-End (truffle / ganache, web3, openzeppelin
-                      etc.)
+                      Solidity Back-End (Truffle / Ganache, Web3js,
+                      Openzeppelin, Hardhat / Ethersjs)
                     </span>
                     . Check out my projects below to see these skills put into
                     use!
