@@ -10,8 +10,10 @@
 }
 
 .globalDiv {
-  background-color: rgba(20, 87, 195, 0.22);
+  /* background-color: rgba(20, 87, 195, 0.22); */
+  background-color: #0a192f;
   height: 100%;
+  opacity: 99.99%;
 }
 
 .globalContactDiv {
@@ -20,7 +22,7 @@
 }
 
 .homeContainer {
-  height: 630px;
+  height: 680px;
   margin: 0 150px 0 150px;
   background-color: rgba(30, 139, 195, 0.3);
   background-image: linear-gradient(
@@ -49,6 +51,7 @@
     rgba(30, 139, 195, 1) 15%,
     rgba(30, 139, 195, 1)
   );
+
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 5%;
@@ -88,6 +91,7 @@
   width: 300px;
   height: 300px;
   align-self: center;
+  border-radius: 5%;
 }
 
 .frontEndText {
@@ -191,10 +195,16 @@
   position: relative;
   overflow: hidden;
   width: 500px;
-  height: 480px;
+  height: 400px;
+  margin-bottom: 80px;
   margin-right: 25px;
   display: flex;
   flex-direction: column;
+  background-color: #0a192f;
+}
+
+.concreteCleaningCard:hover {
+  background-color: #616c7f;
 }
 
 .concreteCleaningImg {
@@ -373,34 +383,101 @@
   text-decoration: none;
 }
 
-@media (max-width: 1260px) {
+.projectDescription {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.9);
+  margin-left: 20px;
+  margin-right: 20px;
+  z-index: 10000000;
+}
+
+.aboutTitle {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* @media (max-width: 1260px) {
   .seperator {
     display: none;
   }
+} */
+
+@media (max-width: 1100px) {
+  .homeContainer {
+    background-image: linear-gradient(
+      to top,
+      white,
+      white 60%,
+      rgba(30, 139, 195, 1) 40%,
+      rgba(30, 139, 195, 1)
+    );
+    height: 730px;
+  }
+
+  .nftImageIphone {
+    width: 260px;
+    height: 260px;
+  }
+
+  .homeBotFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .homeBotLeft {
+    width: 100%;
+  }
+
+  .contactButton {
+    width: 30%;
+  }
+
+  .thirdCard {
+    flex-direction: column;
+  }
+
+  .concreteCleaningCard {
+    margin-bottom: 40px;
+    width: 80%;
+  }
+
+  .aboutContainer {
+    background-image: linear-gradient(
+      to top,
+      white,
+      white 93%,
+      rgba(30, 139, 195, 1) 7%,
+      rgba(30, 139, 195, 1)
+    );
+    height: 2500px;
+  }
+
+  .homeName {
+    font-size: 50px;
+    text-align: center;
+  }
 }
+
 @media (max-width: 800px) {
   .homeContainerSmaller {
     margin: 0 50px 0 50px;
   }
 
-  .homeTopFlexIphone {
+  /* .homeTopFlexIphone {
     display: flex;
     flex-direction: column;
-  }
+  } */
 
   .homeNameIphone {
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
+    margin-top: 40px;
   }
 
   .homeNameOccupationIphone {
     font-size: 18px;
     margin-top: 0px;
-  }
-
-  .nftImageIphone {
-    width: 180px;
-    height: 180px;
   }
 
   .homeContainer {
@@ -508,8 +585,9 @@
   }
 
   .concreteCleaningCard {
-    width: 270px;
-    height: 320px;
+    /* width: 270px; */
+    height: 335px;
+    width: 80%;
     margin-bottom: 15px;
     margin-left: 20px;
   }
@@ -536,6 +614,29 @@
 
   .homeBotRightLeftList li {
     font-size: 11px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* .nftImage {
+    width: 180px;
+    height: 180px;
+  } */
+
+  .homeContainer {
+    height: 900px;
+    background-image: linear-gradient(
+      to top,
+      white,
+      white 50%,
+      rgba(30, 139, 195, 1) 50%,
+      rgba(30, 139, 195, 1)
+    );
+  }
+
+  .homeTopFlexIphone {
+    display: flex;
+    flex-direction: column;
   }
 }
 

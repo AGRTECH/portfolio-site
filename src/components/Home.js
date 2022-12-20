@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./App.module.css";
 import nftImg from "../img/mynft.png";
+import reactLogo from "../img/2.jpg";
 import { Button, Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import everpayPreview from "../img/everpaypreview.png";
@@ -8,7 +9,7 @@ import votingPreview from "../img/transparentvotingpreview.png";
 import powerwashPreview from "../img/powerwashingpreview.png";
 import tokenExchangePreview from "../img/agrtokenexchangepreview.png";
 import code from "../img/onesandzeroes.jpg";
-import chain from "../img/transparentchain.png";
+import chain from "../img/transparentchaingreen.png";
 import swapPreview from "../img/agrswappreview.png";
 import github from "../img/githubicon.png";
 import linkedin from "../img/inicon.png";
@@ -38,13 +39,12 @@ const Home = () => {
               <div
                 className={`${styles.homeTopFlex} ${styles.homeTopFlexIphone}`}
               >
-                <Fade left>
-                  <img
-                    className={`${styles.nftImage} ${styles.nftImageIphone}`}
-                    src={nftImg}
-                    alt="no img"
-                  />
-                </Fade>
+                <img
+                  className={`${styles.nftImage} ${styles.nftImageIphone}`}
+                  src={nftImg}
+                  alt="no img"
+                />
+
                 <ul className={styles.nameList}>
                   <li className={`${styles.homeName} ${styles.homeNameIphone}`}>
                     Alex Ross
@@ -62,7 +62,7 @@ const Home = () => {
                   <p
                     className={`${styles.homeDescription} ${styles.aboutTitle}`}
                   >
-                    Hello!
+                    Hello and welcome!
                   </p>
                   <p className={styles.homeDescription}>
                     I am a software developer, programming for 3+ years
@@ -72,12 +72,13 @@ const Home = () => {
                     </span>{" "}
                     +{" "}
                     <span className={styles.backEndText}>
-                      Solidity Back-End (Truffle / Ganache, Web3js,
-                      Openzeppelin, Hardhat / Ethersjs)
+                      Solidity Back-End (Truffle / Ganache, Web3.js,
+                      Openzeppelin, Hardhat / Ethers.js)
                     </span>
                     . Check out my projects below to see these skills put into
                     use!
                   </p>
+
                   <Link
                     className={`${styles.buttonCenter}${styles.noStyle}`}
                     to={"/contact"}
@@ -100,10 +101,7 @@ const Home = () => {
                       MI &nbsp;
                       <span className={styles.seperator}>|</span>{" "}
                     </li>
-                    <li className={styles.mobileBorder}>
-                      &nbsp;&nbsp;ross4467 @gmail.com &nbsp;
-                      <span className={styles.seperator}>|</span>{" "}
-                    </li>
+
                     <li>
                       <span className={styles.seperator}>&nbsp;&nbsp;</span>
                       586-651-6917
@@ -283,6 +281,10 @@ const Home = () => {
                     Code
                   </Button>
                 </div>
+                <p className={styles.projectDescription}>
+                  A new way to pay others with 24/7 payment streaming on the
+                  blockchain
+                </p>
               </div>
             </Fade>
             <Fade top>
@@ -331,6 +333,9 @@ const Home = () => {
                     Code
                   </Button>
                 </div>
+                <p className={styles.projectDescription}>
+                  Web 3.0 voting and poll creation
+                </p>
               </div>
             </Fade>
             <Fade top>
@@ -367,6 +372,9 @@ const Home = () => {
                     Code
                   </Button>
                 </div>
+                <p className={styles.projectDescription}>
+                  A local power washing business site
+                </p>
               </div>
             </Fade>
           </div>
@@ -412,6 +420,9 @@ const Home = () => {
                     Code
                   </Button>
                 </div>
+                <p className={styles.projectDescription}>
+                  Trade the AGR/ETH pair on the blockchain
+                </p>
               </div>
             </Fade>
             <Fade bottom>
@@ -452,6 +463,7 @@ const Home = () => {
                     Code
                   </Button>
                 </div>
+                <p className={styles.projectDescription}>A dex clone.</p>
               </div>
             </Fade>
             {/* <div className={styles.concreteCleaningCard}>
