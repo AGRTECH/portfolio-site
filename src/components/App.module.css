@@ -11,9 +11,8 @@
 
 .globalDiv {
   /* background-color: rgba(20, 87, 195, 0.22); */
-  background-color: #0a192f;
+  background-color: rgba(10, 25, 47, 0.99);
   height: 100%;
-  opacity: 99.99%;
 }
 
 .globalContactDiv {
