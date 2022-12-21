@@ -13,6 +13,8 @@
   /* background-color: rgba(20, 87, 195, 0.22); */
   background-color: rgba(10, 25, 47, 0.99);
   height: 100%;
+  z-index: -100;
+  position: relative;
 }
 
 .globalContactDiv {
@@ -56,7 +58,7 @@
   border-radius: 5%;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  z-index: 100;
+  z-index: 1000;
 }
 
 .contactContainer {
@@ -270,6 +272,7 @@
   justify-content: center;
   margin-top: -20px;
   margin-bottom: -20px;
+  position: relative;
 }
 
 .chainImg {
