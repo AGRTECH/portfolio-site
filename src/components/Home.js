@@ -469,7 +469,9 @@ const Home = () => {
                       Code
                     </Button>
                   </div>
-                  <p className={styles.projectDescription}>A dex clone.</p>
+                  <p className={styles.projectDescription}>
+                    A simple dex clone.
+                  </p>
                 </div>
               </Fade>
               {/* <div className={styles.concreteCleaningCard}>

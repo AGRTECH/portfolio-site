@@ -393,7 +393,8 @@
 
 .projectDescription {
   text-align: center;
-  color: rgba(0, 0, 0, 0.9);
+  font-weight: bold;
+  color: rgba(0, 0, 0, 1);
   margin-left: 20px;
   margin-right: 20px;
   z-index: 10000000;
