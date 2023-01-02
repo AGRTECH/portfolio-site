@@ -394,7 +394,16 @@
 .projectDescription {
   text-align: center;
   font-weight: bold;
-  color: rgba(0, 0, 0, 1);
+  color: rgb(11, 11, 11);
+  margin-left: 20px;
+  margin-right: 20px;
+  z-index: 10000000;
+}
+
+.projectDescriptionLight {
+  text-align: center;
+  font-weight: bold;
+  color: rgb(185, 184, 184);
   margin-left: 20px;
   margin-right: 20px;
   z-index: 10000000;

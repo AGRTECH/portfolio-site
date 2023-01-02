@@ -378,7 +378,7 @@ const Home = () => {
                       Code
                     </Button>
                   </div>
-                  <p className={styles.projectDescription}>
+                  <p className={styles.projectDescriptionLight}>
                     A local power washing business site
                   </p>
                 </div>
@@ -426,7 +426,7 @@ const Home = () => {
                       Code
                     </Button>
                   </div>
-                  <p className={styles.projectDescription}>
+                  <p className={styles.projectDescriptionLight}>
                     Trade the AGR/ETH pair on the blockchain
                   </p>
                 </div>
