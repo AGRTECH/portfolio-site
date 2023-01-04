@@ -197,11 +197,11 @@ const Home = () => {
                   >
                     Site
                   </Button>
-                  <Button
+                  {/* <Button
                     className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
                   >
                     Video Demo
-                  </Button>
+                  </Button> */}
                   <Button
                     className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
                     onClick={(e) => {
@@ -245,7 +245,7 @@ const Home = () => {
                   >
                     Site
                   </Button>
-                  <Button
+                  {/* <Button
                     className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
                     onClick={(e) => {
                       e.preventDefault();
@@ -256,7 +256,7 @@ const Home = () => {
                     }}
                   >
                     Video Demo
-                  </Button>
+                  </Button> */}
                   <Button
                     className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
                     onClick={(e) => {
@@ -339,11 +339,11 @@ const Home = () => {
                     Site
                   </Button>
 
-                  <Button
+                  {/* <Button
                     className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
                   >
                     Video Demo
-                  </Button>
+                  </Button> */}
 
                   <Button
                     className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
@@ -380,11 +380,11 @@ const Home = () => {
                     Site
                   </Button>
 
-                  <Button
+                  {/* <Button
                     className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
                   >
                     Video Demo
-                  </Button>
+                  </Button> */}
 
                   <Button
                     className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}

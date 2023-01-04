@@ -8,7 +8,7 @@ function QuestionOverlay() {
   const renderTooltip = (props) => (
     <Tooltip {...props}>
       To be able to properly view these sites, you will need a metamask wallet
-      and to log into the Goerli network.
+      and log into the Goerli network.
     </Tooltip>
   );
 
