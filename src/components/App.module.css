@@ -269,6 +269,7 @@
   font-size: 50px;
   text-align: center;
   margin-bottom: 100px;
+  margin-left: 24px;
 }
 
 .chainDiv {
@@ -420,6 +421,16 @@
   z-index: 10000000;
   margin-left: -70px;
   margin-top: -330px;
+}
+
+.questionImg {
+  margin-top: -270px;
+  margin-right: 26px;
+}
+
+.questionImg:hover {
+  cursor: pointer;
+  opacity: 0.3;
 }
 
 @media (max-width: 1100px) {
