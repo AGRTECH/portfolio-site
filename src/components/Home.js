@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./App.module.css";
 import nftImg from "../img/mynft.png";
+import award from "../img/transaward.png";
 import reactLogo from "../img/2.jpg";
 import { Button, Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
@@ -40,11 +41,13 @@ const Home = () => {
                 <div
                   className={`${styles.homeTopFlex} ${styles.homeTopFlexIphone}`}
                 >
-                  <img
-                    className={`${styles.nftImage} ${styles.nftImageIphone}`}
-                    src={nftImg}
-                    alt="no img"
-                  />
+                  <Fade left>
+                    <img
+                      className={`${styles.nftImage} ${styles.nftImageIphone}`}
+                      src={nftImg}
+                      alt="no img"
+                    />
+                  </Fade>
 
                   <ul className={styles.nameList}>
                     <li
@@ -249,231 +252,227 @@ const Home = () => {
         </div> */}
             <p className={styles.portfolioTitle}>Portfolio</p>
             <div className={styles.thirdCard}>
+              <div className={styles.concreteCleaningCard}>
+                <img
+                  src={everpayPreview}
+                  className={styles.concreteCleaningImg}
+                  alt=""
+                />
+                <p className={styles.cardCenter}>Everpay</p>
+                <div className={styles.buttons}>
+                  <Button
+                    className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      window.open("https://everpay.vercel.app", "_blank");
+                    }}
+                  >
+                    Site
+                  </Button>
+                  <Button
+                    className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
+                  >
+                    Video Demo
+                  </Button>
+                  <Button
+                    className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      window.open(
+                        "https://github.com/AGRTECH/Everpay",
+                        "_blank"
+                      );
+                    }}
+                  >
+                    Code
+                  </Button>
+                </div>
+                <p className={styles.projectDescription}>
+                  A new way to pay others with 24/7 payment streaming on the
+                  blockchain
+                </p>
+              </div>
               <Fade top>
-                <div className={styles.concreteCleaningCard}>
-                  <img
-                    src={everpayPreview}
-                    className={styles.concreteCleaningImg}
-                    alt=""
-                  />
-                  <p className={styles.cardCenter}>Everpay</p>
-                  <div className={styles.buttons}>
-                    <Button
-                      className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
-                      onClick={(e) => {
-                        e.preventDefault();
-                        window.open("https://everpay.vercel.app", "_blank");
-                      }}
-                    >
-                      Site
-                    </Button>
-                    <Button
-                      className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
-                    >
-                      Video Demo
-                    </Button>
-                    <Button
-                      className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
-                      onClick={(e) => {
-                        e.preventDefault();
-                        window.open(
-                          "https://github.com/AGRTECH/Everpay",
-                          "_blank"
-                        );
-                      }}
-                    >
-                      Code
-                    </Button>
-                  </div>
-                  <p className={styles.projectDescription}>
-                    A new way to pay others with 24/7 payment streaming on the
-                    blockchain
-                  </p>
+                <div>
+                  <img src={award} className={styles.awardIcon} alt="" />
                 </div>
               </Fade>
+              <div className={styles.concreteCleaningCard}>
+                <img
+                  src={votingPreview}
+                  className={styles.concreteCleaningImg}
+                  alt=""
+                />
+                <p className={styles.cardCenter}>Transparent Voting</p>
+                <div className={styles.buttons}>
+                  <Button
+                    className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      window.open(
+                        "https://transparent-voting.vercel.app",
+                        "_blank"
+                      );
+                    }}
+                  >
+                    Site
+                  </Button>
+                  <Button
+                    className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      window.open(
+                        "https://drive.google.com/file/d/1zA3Jx-ifjzlEBcXDVSX4othSllvrpSI4/view?usp=sharing",
+                        "_blank"
+                      );
+                    }}
+                  >
+                    Video Demo
+                  </Button>
+                  <Button
+                    className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      window.open(
+                        "https://github.com/AGRTECH/transparent-voting",
+                        "_blank"
+                      );
+                    }}
+                  >
+                    Code
+                  </Button>
+                </div>
+                <p className={styles.projectDescription}>
+                  Web 3.0 voting and poll creation
+                </p>
+              </div>
               <Fade top>
-                <div className={styles.concreteCleaningCard}>
-                  <img
-                    src={votingPreview}
-                    className={styles.concreteCleaningImg}
-                    alt=""
-                  />
-                  <p className={styles.cardCenter}>Transparent Voting</p>
-                  <div className={styles.buttons}>
-                    <Button
-                      className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
-                      onClick={(e) => {
-                        e.preventDefault();
-                        window.open(
-                          "https://transparent-voting.vercel.app",
-                          "_blank"
-                        );
-                      }}
-                    >
-                      Site
-                    </Button>
-                    <Button
-                      className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
-                      onClick={(e) => {
-                        e.preventDefault();
-                        window.open(
-                          "https://drive.google.com/file/d/1zA3Jx-ifjzlEBcXDVSX4othSllvrpSI4/view?usp=sharing",
-                          "_blank"
-                        );
-                      }}
-                    >
-                      Video Demo
-                    </Button>
-                    <Button
-                      className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
-                      onClick={(e) => {
-                        e.preventDefault();
-                        window.open(
-                          "https://github.com/AGRTECH/transparent-voting",
-                          "_blank"
-                        );
-                      }}
-                    >
-                      Code
-                    </Button>
-                  </div>
-                  <p className={styles.projectDescription}>
-                    Web 3.0 voting and poll creation
-                  </p>
+                <div>
+                  <img src={award} className={styles.awardIcon} alt="" />
                 </div>
               </Fade>
-              <Fade top>
-                <div className={styles.concreteCleaningCard}>
-                  <img
-                    src={powerwashPreview}
-                    className={styles.concreteCleaningImg}
-                    alt=""
-                  />
-                  <p className={styles.cardCenter}>
-                    Hercules Power Washing Site
-                  </p>
-                  <div className={styles.buttons}>
-                    <Button
-                      className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
-                      onClick={(e) => {
-                        e.preventDefault();
-                        window.open(
-                          "https://herculeshosing.herokuapp.com/",
-                          "_blank"
-                        );
-                      }}
-                    >
-                      Site
-                    </Button>
-                    <Button
-                      className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
-                      onClick={(e) => {
-                        e.preventDefault();
-                        window.open(
-                          "https://github.com/AGRTECH/alins-power-washing",
-                          "_blank"
-                        );
-                      }}
-                    >
-                      Code
-                    </Button>
-                  </div>
-                  <p className={styles.projectDescriptionLight}>
-                    A local power washing business site
-                  </p>
+              <div className={styles.concreteCleaningCard}>
+                <img
+                  src={powerwashPreview}
+                  className={styles.concreteCleaningImg}
+                  alt=""
+                />
+                <p className={styles.cardCenter}>Hercules Power Washing Site</p>
+                <div className={styles.buttons}>
+                  <Button
+                    className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      window.open(
+                        "https://hercules-power-washing.vercel.app/",
+                        "_blank"
+                      );
+                    }}
+                  >
+                    Site
+                  </Button>
+                  <Button
+                    className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      window.open(
+                        "https://github.com/AGRTECH/alins-power-washing",
+                        "_blank"
+                      );
+                    }}
+                  >
+                    Code
+                  </Button>
                 </div>
-              </Fade>
+                <p className={styles.projectDescriptionLight}>
+                  A local power washing business site
+                </p>
+              </div>
             </div>
             <div className={styles.thirdCard}>
-              <Fade bottom>
-                <div className={styles.concreteCleaningCard}>
-                  <img
-                    src={tokenExchangePreview}
-                    className={styles.concreteCleaningImg}
-                    alt=""
-                  />
-                  <p className={styles.cardCenter}>AGR Token Exchange</p>
-                  <div className={styles.buttons}>
-                    <Button
-                      className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
-                      onClick={(e) => {
-                        e.preventDefault();
-                        window.open(
-                          "https://agr-token-exchange.vercel.app/",
-                          "_blank"
-                        );
-                      }}
-                    >
-                      Site
-                    </Button>
+              <div className={styles.concreteCleaningCard}>
+                <img
+                  src={tokenExchangePreview}
+                  className={styles.concreteCleaningImg}
+                  alt=""
+                />
+                <p className={styles.cardCenter}>AGR Token Exchange</p>
+                <div className={styles.buttons}>
+                  <Button
+                    className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      window.open(
+                        "https://agr-token-exchange.vercel.app/",
+                        "_blank"
+                      );
+                    }}
+                  >
+                    Site
+                  </Button>
 
-                    <Button
-                      className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
-                    >
-                      Video Demo
-                    </Button>
+                  <Button
+                    className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
+                  >
+                    Video Demo
+                  </Button>
 
-                    <Button
-                      className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
-                      onClick={(e) => {
-                        e.preventDefault();
-                        window.open(
-                          "https://github.com/AGRTECH/agr-token-exchange",
-                          "_blank"
-                        );
-                      }}
-                    >
-                      Code
-                    </Button>
-                  </div>
-                  <p className={styles.projectDescriptionLight}>
-                    Trade the AGR/ETH pair on the blockchain
-                  </p>
+                  <Button
+                    className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      window.open(
+                        "https://github.com/AGRTECH/agr-token-exchange",
+                        "_blank"
+                      );
+                    }}
+                  >
+                    Code
+                  </Button>
                 </div>
-              </Fade>
-              <Fade bottom>
-                <div className={styles.concreteCleaningCard}>
-                  <img
-                    src={swapPreview}
-                    className={styles.concreteCleaningImg}
-                    alt=""
-                  />
-                  <p className={styles.cardCenter}>AGR Swap</p>
-                  <div className={styles.buttons}>
-                    <Button
-                      className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
-                      onClick={(e) => {
-                        e.preventDefault();
-                        window.open("https://agrswap.vercel.app/", "_blank");
-                      }}
-                    >
-                      Site
-                    </Button>
+                <p className={styles.projectDescriptionLight}>
+                  Trade the AGR/ETH pair on the blockchain
+                </p>
+              </div>
+              <div className={styles.concreteCleaningCard}>
+                <img
+                  src={swapPreview}
+                  className={styles.concreteCleaningImg}
+                  alt=""
+                />
+                <p className={styles.cardCenter}>AGR Swap</p>
+                <div className={styles.buttons}>
+                  <Button
+                    className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      window.open("https://agrswap.vercel.app/", "_blank");
+                    }}
+                  >
+                    Site
+                  </Button>
 
-                    <Button
-                      className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
-                    >
-                      Video Demo
-                    </Button>
+                  <Button
+                    className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
+                  >
+                    Video Demo
+                  </Button>
 
-                    <Button
-                      className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
-                      onClick={(e) => {
-                        e.preventDefault();
-                        window.open(
-                          "https://github.com/AGRTECH/starter_kit",
-                          "_blank"
-                        );
-                      }}
-                    >
-                      Code
-                    </Button>
-                  </div>
-                  <p className={styles.projectDescription}>
-                    A simple dex clone.
-                  </p>
+                  <Button
+                    className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      window.open(
+                        "https://github.com/AGRTECH/starter_kit",
+                        "_blank"
+                      );
+                    }}
+                  >
+                    Code
+                  </Button>
                 </div>
-              </Fade>
+                <p className={styles.projectDescription}>A simple dex clone.</p>
+              </div>
               {/* <div className={styles.concreteCleaningCard}>
             <img
               src={powerwashPreview}
