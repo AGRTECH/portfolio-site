@@ -197,11 +197,18 @@ const Home = () => {
                   >
                     Site
                   </Button>
-                  {/* <Button
+                  <Button
+                    onClick={(e) => {
+                      e.preventDefault();
+                      window.open(
+                        "https://drive.google.com/file/d/1er-bTRLXtN6Q21xLQiQh25u3Z4A85pQ6/view?usp=sharing",
+                        "_blank"
+                      );
+                    }}
                     className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
                   >
                     Video Demo
-                  </Button> */}
+                  </Button>
                   <Button
                     className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
                     onClick={(e) => {
