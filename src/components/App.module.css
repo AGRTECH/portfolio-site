@@ -2,21 +2,38 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
 }
 
 .bodyBackground {
   background-color: blue;
 }
 
+.globalDiv {
+  /* background-color: rgba(20, 87, 195, 0.22); */
+  background-color: rgba(10, 25, 47, 0.99);
+  height: 100%;
+  z-index: -100;
+}
+
+.globalDiv2 {
+  z-index: 100000000000;
+  position: relative;
+}
+
+.globalContactDiv {
+  background-color: rgba(20, 87, 195, 0.22);
+  height: 100vh;
+}
+
 .homeContainer {
-  height: 600px;
+  height: 680px;
   margin: 0 150px 0 150px;
-  /* background-color: rgba(30, 139, 195, 0.3); */
+  background-color: rgba(30, 139, 195, 0.3);
   background-image: linear-gradient(
     to bottom,
-    rgba(30, 139, 195, 0.3),
-    rgba(30, 139, 195, 0.3) 50%,
+    rgba(30, 139, 195, 1),
+    rgba(30, 139, 195, 1) 50%,
     white 50%,
     white
   );
@@ -25,27 +42,51 @@
   border-radius: 5%;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  z-index: 1000;
 }
+
 .aboutContainer {
-  height: 600px;
+  height: 860px;
   margin: 0 150px 0 150px;
   /* background-color: rgba(30, 139, 195, 0.3); */
+  padding-top: 70px;
   background-image: linear-gradient(
     to top,
     white,
-    white 80%,
-    rgba(30, 139, 195, 0.3) 20%,
-    rgba(30, 139, 195, 0.3)
+    white 82%,
+    rgba(30, 139, 195, 1) 18%,
+    rgba(30, 139, 195, 1)
+  );
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5%;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  z-index: 1000;
+}
+
+.contactContainer {
+  height: 550px;
+  margin: 0 150px 0 150px;
+  background-image: linear-gradient(
+    to top,
+    white,
+    white 85%,
+    rgba(30, 139, 195, 1) 15%,
+    rgba(30, 139, 195, 1)
   );
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 5%;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  z-index: 100;
 }
 
 .innerHomeContainer {
   padding: 50px 50px 50px 50px;
+  z-index: 1000;
 }
 
 .innerAboutContainer {
@@ -55,6 +96,8 @@
 .nftImage {
   width: 300px;
   height: 300px;
+  align-self: center;
+  border-radius: 5%;
 }
 
 .frontEndText {
@@ -108,7 +151,7 @@
 }
 
 .contactBot {
-  padding: 0 200px 0 200px;
+  padding: 0 150px 0 150px;
 }
 
 .homeBotLeft {
@@ -120,38 +163,356 @@
 
 .homeBotRight {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   margin-top: 30px;
 }
 
 .homeBotRightLeftList {
+  display: flex;
   list-style: none;
   font-weight: bold;
+  justify-content: center;
 }
 
 .homeBotRightRightList {
+  display: flex;
   list-style: none;
   color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+}
+
+.homeBotRightRightList li {
+  margin-right: 20px;
 }
 
 .buttonLiveDemo {
   margin-right: 7px;
 }
 
-@media (max-width: 1000px) {
-  .homeContainerSmaller {
-    margin: 0 50px 0 50px;
-  }
+.thirdCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -65px 25px 0px 25px;
 }
 
-@media (max-width: 500px) {
-  .homeTopFlexIphone {
+.concreteCleaningCard {
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+  margin-bottom: 80px;
+  margin-right: 25px;
+  display: flex;
+  flex-direction: column;
+  background-color: #0a192f;
+}
+
+.concreteCleaningCard:hover {
+  background-color: #616c7f;
+}
+
+.concreteCleaningImg {
+  /* z-index: -90; */
+  opacity: 0.6;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: 3px solid black;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.cardCenter {
+  text-align: center;
+  margin-top: 90px;
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.center {
+  text-align: center;
+  align-self: center;
+  align-items: center;
+}
+
+.estimateButton {
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+  border: 3px solid black;
+  background-color: rgba(31, 121, 169, 0.9);
+  /* height: 40px; */
+  font-size: 18px;
+  border-radius: 7%;
+  margin-right: 4px;
+  padding: 5px;
+}
+
+.estimateButton:hover {
+  top: -10px;
+  background-color: rgba(247, 170, 3, 0.9);
+}
+
+.buttons {
+  align-self: center;
+  z-index: 1;
+}
+
+.portfolioTitle {
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 100px;
+  margin-left: 24px;
+}
+
+.chainDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -20px;
+  margin-bottom: -20px;
+  position: relative;
+}
+
+.chainImg {
+  height: 300px;
+  align-self: center;
+  z-index: -1;
+}
+
+.codeImg {
+  z-index: -90;
+  opacity: 0.3;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 150px;
+  background-repeat: repeat-y;
+}
+
+.codeImg2 {
+  z-index: -90;
+  opacity: 0.3;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin-top: 787px;
+}
+
+.codeImg3 {
+  z-index: -90;
+  opacity: 0.3;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin-top: 1572px;
+}
+
+.codeImg4 {
+  z-index: -90;
+  opacity: 0.3;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 74%;
+  margin-top: 2359px;
+}
+
+.codeDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.homeWrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.socialIcon {
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+  height: 60px;
+  width: 60px;
+  border: 1px solid black;
+  border-radius: 100%;
+  padding: 10px 10px 10px 10px;
+}
+
+.mobileOnly {
+  display: none;
+}
+
+.contactButton {
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+  border: 3px solid black;
+  background-color: rgba(31, 121, 169, 0.9);
+  /* height: 40px; */
+  font-size: 20px;
+  border-radius: 7%;
+  margin-right: 4px;
+  width: 100%;
+  padding: 0 15px 0 15px;
+  align-self: center;
+  justify-self: center;
+  justify-content: center;
+}
+
+.contactButton:hover {
+  top: -10px;
+  background-color: rgba(247, 170, 3, 0.9);
+}
+
+.socialIcon:hover {
+  top: -10px;
+  background-color: rgba(33, 87, 193, 0.2);
+}
+
+.buttonCenter {
+  align-self: center;
+}
+
+.noStyle {
+  text-decoration: none;
+}
+
+.projectDescription {
+  text-align: center;
+  font-weight: bold;
+  color: rgb(11, 11, 11);
+  margin-left: 20px;
+  margin-right: 20px;
+  z-index: 10000000;
+}
+
+.projectDescriptionLight {
+  text-align: center;
+  font-weight: bold;
+  color: rgb(185, 184, 184);
+  margin-left: 20px;
+  margin-right: 20px;
+  z-index: 10000000;
+}
+
+.aboutTitle {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.awardIcon {
+  height: 70px;
+  width: 60px;
+  z-index: 10000000;
+  margin-left: -70px;
+  margin-top: -330px;
+}
+
+.questionImg {
+  margin-top: -270px;
+  margin-right: 26px;
+}
+
+.questionImg:hover {
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+@media (max-width: 1100px) {
+  .homeContainer {
+    background-image: linear-gradient(
+      to top,
+      white,
+      white 60%,
+      rgba(30, 139, 195, 1) 40%,
+      rgba(30, 139, 195, 1)
+    );
+    height: 730px;
+  }
+
+  .nftImageIphone {
+    width: 260px;
+    height: 260px;
+  }
+
+  .homeBotFlex {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .homeBotLeft {
+    width: 100%;
+  }
+
+  .contactButton {
+    width: 30%;
+  }
+
+  .thirdCard {
     flex-direction: column;
   }
 
+  .concreteCleaningCard {
+    margin-bottom: 40px;
+    width: 80%;
+  }
+
+  .aboutContainer {
+    background-image: linear-gradient(
+      to top,
+      white,
+      white 93%,
+      rgba(30, 139, 195, 1) 7%,
+      rgba(30, 139, 195, 1)
+    );
+    height: 2500px;
+  }
+
+  .homeName {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .contactBot {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .awardIcon {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .homeContainerSmaller {
+    margin: 0 50px 0 50px;
+  }
+
+  /* .homeTopFlexIphone {
+    display: flex;
+    flex-direction: column;
+  } */
+
   .homeNameIphone {
-    font-size: 30px;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 40px;
   }
 
   .homeNameOccupationIphone {
@@ -159,28 +520,33 @@
     margin-top: 0px;
   }
 
-  .nftImageIphone {
-    width: 180px;
-    height: 180px;
-  }
-
   .homeContainer {
     background-image: linear-gradient(
       to top,
       white,
-      white 55%,
-      rgba(30, 139, 195, 0.3) 45%,
-      rgba(30, 139, 195, 0.3)
+      white 61%,
+      rgba(30, 139, 195, 1) 39%,
+      rgba(30, 139, 195, 1)
     );
-    height: 720px;
+    height: 730px;
   }
 
   .aboutContainer {
-    height: 1000px;
+    height: 2050px;
+    background-image: linear-gradient(
+      to top,
+      white,
+      white 90%,
+      rgba(30, 139, 195, 1) 10%,
+      rgba(30, 139, 195, 1)
+    );
   }
 
   .contactContainer {
-    height: 500px;
+    height: 550px;
+  }
+
+  .innerHomeContainer {
   }
 
   .homeBotFlex {
@@ -203,13 +569,21 @@
     flex-direction: row;
     padding-left: 0px;
     list-style: none;
+    align-items: center;
+    justify-content: center;
   }
 
   .homeBotRightRightList {
     display: flex;
     flex-direction: row;
-    padding-left: 0px;
     list-style: none;
+    padding-left: 0px;
+    justify-content: center;
+  }
+
+  .socialIcon {
+    height: 45px;
+    width: 45px;
   }
 
   .homeBotRightLeftList li {
@@ -217,7 +591,7 @@
   }
 
   .homeBotRightRightList li {
-    margin-right: 25px;
+    margin-right: 10px;
     font-size: 10px;
   }
 
@@ -244,5 +618,141 @@
   .contactBot {
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .thirdCard {
+    flex-direction: column;
+    margin-top: 0px;
+  }
+
+  .concreteCleaningCard {
+    /* width: 270px; */
+    height: 335px;
+    width: 80%;
+    margin-bottom: 15px;
+    margin-left: 20px;
+  }
+
+  .concreteCleaningImg {
+    height: 100%;
+  }
+
+  .buttons {
+    display: flex;
+  }
+
+  .estimateButton {
+    font-size: 15px;
+  }
+
+  .seperator {
+    display: none;
+  }
+
+  .mobileOnly {
+    display: inline;
+  }
+
+  .homeBotRightLeftList li {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* .nftImage {
+    width: 180px;
+    height: 180px;
+  } */
+
+  .homeContainer {
+    height: 900px;
+    background-image: linear-gradient(
+      to top,
+      white,
+      white 50%,
+      rgba(30, 139, 195, 1) 50%,
+      rgba(30, 139, 195, 1)
+    );
+  }
+
+  .homeTopFlexIphone {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 520px) {
+  .contactButton {
+    width: 100%;
+  }
+
+  .homeContainerSmaller {
+    margin: 0px 20px 0px 20px;
+  }
+
+  .homeContainer {
+    height: 1000px;
+    background-image: linear-gradient(
+      to top,
+      white,
+      white 55%,
+      rgba(30, 139, 195, 1) 45%,
+      rgba(30, 139, 195, 1)
+    );
+  }
+
+  .concreteCleaningCard {
+    width: 100%;
+    height: 280px;
+  }
+
+  .aboutContainer {
+    height: 1800px;
+  }
+}
+
+@media (max-width: 376px) {
+  .homeBotRightLeftList li {
+    font-size: 11px;
+  }
+
+  .innerAboutContainer {
+    margin: 0 10px 0 10px;
+  }
+
+  .aboutContainer {
+    height: 1750px;
+  }
+
+  .homeContainer {
+    background-image: linear-gradient(
+      to top,
+      white,
+      white 60%,
+      rgba(30, 139, 195, 1) 40%,
+      rgba(30, 139, 195, 1)
+    );
+  }
+
+  .socialIcon {
+    height: 37px;
+    width: 37px;
+  }
+
+  .concreteCleaningCard {
+    width: 230px;
+    height: 270px;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-left: 22px;
+  }
+
+  .estimateButton {
+    font-size: 14px;
+  }
+
+  .nftImage {
+    width: 200px;
+    height: 200px;
   }
 }

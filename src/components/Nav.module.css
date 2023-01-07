@@ -3,7 +3,8 @@
   justify-content: space-between;
   margin-right: 150px;
   margin-left: 150px;
-  margin-top: 20px;
+  padding-top: 20px;
+  opacity: 0;
 }
 
 .nav li {
@@ -40,7 +41,7 @@
 
 @media (max-width: 1000px) {
   .navSmaller {
-    margin: 20px 50px 0 50px;
+    /* margin: 20px 50px 0 50px; */
   }
 }
 
