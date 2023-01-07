@@ -252,18 +252,18 @@ const Home = () => {
                   >
                     Site
                   </Button>
-                  {/* <Button
+                  <Button
                     className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
                     onClick={(e) => {
                       e.preventDefault();
                       window.open(
-                        "https://drive.google.com/file/d/1zA3Jx-ifjzlEBcXDVSX4othSllvrpSI4/view?usp=sharing",
+                        "https://drive.google.com/file/d/1gTfqQe_jzTWXunBC71Af9Wuwx8RljwWQ/view?usp=sharing",
                         "_blank"
                       );
                     }}
                   >
                     Video Demo
-                  </Button> */}
+                  </Button>
                   <Button
                     className={`${styles.estimateButton} ${styles.center} ${styles.iphoneEstimate}`}
                     onClick={(e) => {
